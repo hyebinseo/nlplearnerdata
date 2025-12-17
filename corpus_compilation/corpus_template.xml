@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+    <meta>
+        <title>Corpus Title</title>
+        <version>In development</version>
+        <time_periods>
+            <time_period id="24-2"/>
+        </time_periods>
+        <tasks>
+            <task id="T1" description="Three favorite things"/>
+            <task id="T2" description="Best day"/>
+        </tasks>
+    </meta>
+
+    <writings>
+        <entry id="1_A10102" time_period="24-2" task="T1" language_score="10" content_score="10">
+            <learner id="10102" grade="1"/> 
+            <text_original>Example text 1 line 1
+Example text 1 line 2
+Example text 1 line 3</text_original>
+            <text_error>Error-tagged text</text_error>
+            <text_corrected>Corrected text</text_corrected>
+        </entry>
+
+        <entry id="1_A10104" time_period="24-2" task="T2" language_score="10" content_score="10">
+            <learner id="103512" grade="1"/>
+            <text_original>Example text 1</text_original>
+            <text_error>Error-tagged text</text_error>
+            <text_corrected>Corrected text</text_corrected>
+        </entry>
+
+    </writings>
+</corpus>

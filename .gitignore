@@ -1,0 +1,27 @@
+# Ignore the following files
+corpus_compilation/Oryu Middle School Korean Learner Corpus.xml
+interrater_reliability/HB_annotation.xlsx
+interrater_reliability/UY_annotation.xlsx
+
+# Ignore everything in the folder
+.vscode/* 
+pilot_coding/* 
+raw_text/*
+reference_db/* 
+
+references/learner_errors/data/*
+references/learner_errors/ref_gector/*
+references/learner_errors/ref_gramformer/*
+references/learner_errors/ref_language_tool_python/*
+references/learner_errors/ref_results/*
+
+references/pos_dependency/__pycache__/*
+references/pos_dependency/out_allen/*
+references/pos_dependency/out_stanza_atis/*
+references/pos_dependency/out_stanza_esl/*
+references/pos_dependency/out_udpipe/*
+references/pos_dependency/out_total/*
+references/pos_dependency/remove/*
+references/pos_dependency/ref_test.py
+
+# Except these files (e.g., !corpus_compilation/corpus_compilation.ipynb)
