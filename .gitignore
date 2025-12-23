@@ -1,27 +1,32 @@
+# Ignore everything in the folder
+.vscode/*
+
 # Ignore the following files
 corpus_compilation/Oryu Middle School Korean Learner Corpus.xml
-interrater_reliability/HB_annotation.xlsx
-interrater_reliability/UY_annotation.xlsx
 
-# Ignore everything in the folder
-.vscode/* 
+interrater_reliability/* 
+!interrater_reliability/computing_interrater_reliability.ipynb
+
+model_evaluation/*
+!model_evaluation/run_models.py
+!model_evaluation/spacy_en_udv25_englishewt_trf.py
+!model_evaluation/stanford_parser.py
+
+
+# Ignore everything in the folder 
 pilot_coding/* 
 raw_text/*
 reference_db/* 
 
-references/learner_errors/data/*
-references/learner_errors/ref_gector/*
-references/learner_errors/ref_gramformer/*
-references/learner_errors/ref_language_tool_python/*
-references/learner_errors/ref_results/*
+# .ignore for learner errors and pos dependency
+references/learner_errors/*
+!references/learner_errors/detect_errors.ipynb
 
-references/pos_dependency/__pycache__/*
-references/pos_dependency/out_allen/*
-references/pos_dependency/out_stanza_atis/*
-references/pos_dependency/out_stanza_esl/*
-references/pos_dependency/out_udpipe/*
-references/pos_dependency/out_total/*
-references/pos_dependency/remove/*
-references/pos_dependency/ref_test.py
+references/pos_dependency/*
+!references/pos_dependency/ref_allen.py
+!references/pos_dependency/ref_main.py
+!references/pos_dependency/ref_stanza_atis.py
+!references/pos_dependency/ref_stanza_eslspok.py
+!references/pos_dependency/udpipe.py
 
 # Except these files (e.g., !corpus_compilation/corpus_compilation.ipynb)
