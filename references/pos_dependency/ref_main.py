@@ -42,7 +42,7 @@ for txt_path in txt_paths:
 for path, text, name in zip(txt_paths, texts, names):
     subprocess.run([
         r"C:\Users\seohy\anaconda3\envs\nlplearnerdata-allen\python.exe", 
-        "ref_allen.py",
+        r"C:\Users\seohy\nlplearnerdata\references\pos_dependency\ref_allen.py",
         text,
         name
     ])
@@ -51,7 +51,7 @@ for path, text, name in zip(txt_paths, texts, names):
 for path, text, name in zip(txt_paths, texts, names):
     subprocess.run([
         r"C:\Users\seohy\anaconda3\envs\nlplearnerdata\python.exe", 
-        "ref_stanza_atis.py", 
+        r"C:\Users\seohy\nlplearnerdata\references\pos_dependency\ref_stanza_atis.py", 
         text,
         name
     ])
@@ -60,7 +60,7 @@ for path, text, name in zip(txt_paths, texts, names):
 for path, text, name in zip(txt_paths, texts, names):
     subprocess.run([
         r"C:\Users\seohy\anaconda3\envs\nlplearnerdata\python.exe", 
-        "ref_stanza_eslspok.py", 
+        r"C:\Users\seohy\nlplearnerdata\references\pos_dependency\ref_stanza_esl.py", 
         text,
         name
     ])
@@ -69,7 +69,7 @@ for path, text, name in zip(txt_paths, texts, names):
 for path, text, name in zip(txt_paths, texts, names):
     subprocess.run([
         r"C:\Users\seohy\anaconda3\envs\nlplearnerdata\python.exe", 
-        "ref_udpipe.py", 
+        r"C:\Users\seohy\nlplearnerdata\references\pos_dependency\ref_udpipe.py", 
         text,
         name
     ])
@@ -79,10 +79,10 @@ for path, text, name in zip(txt_paths, texts, names):
 # ==================================
 for name in names:
     # Read in
-    df_allen = pd.read_csv(f"out_allen/{name}.csv")
-    df_stanza_atis = pd.read_csv(f"out_stanza_atis/{name}.csv")
-    df_stanza_esl = pd.read_csv(f"out_stanza_esl/{name}.csv")
-    df_udpipe = pd.read_csv(f"out_udpipe/{name}.csv")
+    df_allen = pd.read_csv(f"C:\\Users\\seohy\\nlplearnerdata\\references\\pos_dependency\\out_allen\\{name}.csv")
+    df_stanza_atis = pd.read_csv(f"C:\\Users\\seohy\\nlplearnerdata\\references\\pos_dependency\\out_stanza_atis\\{name}.csv")
+    df_stanza_esl = pd.read_csv(f"C:\\Users\\seohy\\nlplearnerdata\\references\\pos_dependency\\out_stanza_esl\\{name}.csv")
+    df_udpipe = pd.read_csv(f"C:\\Users\\seohy\\nlplearnerdata\\references\\pos_dependency\\out_udpipe\\{name}.csv")
 
     # Add one to index column for atis and stanza_esl to match word index 
     df_stanza_atis.index = df_stanza_atis.index.astype(int) + 1
@@ -92,4 +92,4 @@ for name in names:
     df_total = pd.concat([df_allen, df_stanza_atis, df_stanza_esl, df_udpipe], axis=1)
 
     # Output combined df into out_total folder
-    df_total.to_csv(f"out_total/{name}.csv")
+    df_total.to_csv(f"C:\\Users\\seohy\\nlplearnerdata\\references\\pos_dependency\\out_total\\{name}.csv")

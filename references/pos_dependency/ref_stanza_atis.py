@@ -25,7 +25,7 @@ def stanza_atis(text, name):
     df_atis.index.name = "atis_id"
     df_atis.index = df_atis.index + 1
 
-    df_atis.to_csv(f"out_stanza_atis/{name}.csv")
+    df_atis.to_csv(f"C:\\Users\\seohy\\nlplearnerdata\\references\\pos_dependency\\out_stanza_atis\\{name}.csv")
 
 # Creating main blocker based on test
 if __name__ == "__main__":

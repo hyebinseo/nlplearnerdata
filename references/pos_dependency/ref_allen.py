@@ -29,7 +29,7 @@ def allen(text, name):
     df_allen.index.name = "allen_id"
 
     # Save df_allen to be read at main.py
-    df_allen.to_csv(f"out_allen/{name}.csv")
+    df_allen.to_csv(f"C:\\Users\\seohy\\nlplearnerdata\\references\\pos_dependency\\out_allen\\{name}.csv")
 
 # Testing the allen function
 # Saves results of predicting text into name.csv

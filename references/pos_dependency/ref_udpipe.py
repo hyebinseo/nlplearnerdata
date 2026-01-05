@@ -22,7 +22,7 @@ def udpipe(text, name):
     df_udpipe = pd.DataFrame(rows, columns=["udpipe_word", "udpipe_pos", "udpipe_head", "udpipe_dependencies"])
     df_udpipe.index.name = "udpipe_id"
 
-    df_udpipe.to_csv(f"out_udpipe/{name}.csv")
+    df_udpipe.to_csv(f"C:\\Users\\seohy\\nlplearnerdata\\references\\pos_dependency\\out_udpipe\\{name}.csv")
 
 # Creating main blocker
 if __name__ == "__main__":
